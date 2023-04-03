@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 ?>
 
 <section class="row my-5">
-    <div class="container offset-3 col-md-6">
+    <div class="container offset-md-3 offset-sm-0 col-sm-12 col-md-6">
         <h2 class="my-3">Blog</h2>
         <div class="flex justify-item-center">
             <?php

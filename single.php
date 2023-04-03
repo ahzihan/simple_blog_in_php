@@ -9,7 +9,7 @@ $result = $conn->query($sql);
 ?>
 
 <section class="row">
-    <div class="container offset-2 col-md-8">
+    <div class="container offset-md-2 col-md-8 offset-sm-0 col-sm-12">
         <h2 class="my-3">Blog</h2>
         <div class="flex justify-item-center">
             <?php

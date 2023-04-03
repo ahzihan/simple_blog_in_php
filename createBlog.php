@@ -31,7 +31,7 @@ include './include/header.php';
 
     <section class="row">
         <div class="container">
-            <div class="offset-3 col-md-6 shadow-lg p-5 rounded mt-3">
+            <div class="offset-md-3 col-md-6 shadow-lg offset-sm-0 col-sm-12 p-5 rounded mt-3">
                 <h2 class="text-center mb-3">Create Post</h2>
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
