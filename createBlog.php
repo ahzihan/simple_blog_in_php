@@ -1,5 +1,6 @@
 <?php
 include "./include/connection.php";
+include './include/header.php';
 
 
 $message = '';
@@ -25,7 +26,7 @@ if (isset($_POST["submit"])) {
     }
 }
 
-include './include/header.php';
+
 
 ?>
 

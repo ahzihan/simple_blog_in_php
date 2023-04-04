@@ -26,7 +26,7 @@ if (isset($_POST["btn"])) {
 ?>
 
 <section class="row bg-secondary my-5">
-    <div class="container offset-3 col-md-6 p-5 text-white">
+    <div class="container offset-md-3 col-md-6 offset-sm-0 col-sm-12 p-5 text-white">
         <h3 class="text-center">Contact Us</h3>
         <h4 class="text-danger"><?php echo $message;?></h4>
             <form action="" method="POST">
