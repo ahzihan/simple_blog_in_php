@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 
             ?>
             <div class="card mb-3">
-                <img class="card-img-top" style="height:400px;width:100%;" src="img/<?php echo $row["image"]; ?>" alt="">
+                <img class="card-img-top" style="height:400px;" src="img/<?php echo $row["image"]; ?>" alt="">
                 <div class="card-body">
                     <h5 class="card-title">
                         <a href="single.php?id=<?php echo $id;?>"><?php echo $row['title']; ?></a>
@@ -34,7 +34,6 @@ $result = $conn->query($sql);
                     <p class="card-text"><?php echo substr($description,0,120)?><a href="single.php?id=<?php echo $id;?>">Read more...</a></p>
                 </div>
             </div>
-        </div>
         <?php }} else {?>
         <div class="card mb-3"><b>No Data Fount</b></div>
         <?php }?>         

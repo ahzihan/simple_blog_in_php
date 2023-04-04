@@ -34,6 +34,7 @@ if (isset($_POST["submit"])) {
         <div class="container">
             <div class="offset-md-3 col-md-6 shadow-lg offset-sm-0 col-sm-12 p-5 rounded mt-3">
                 <h2 class="text-center mb-3">Create Post</h2>
+                <h4 class="text-danger"><?php echo $message;?></h4>
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="title" class="form-label"><b>Title</b></label>
