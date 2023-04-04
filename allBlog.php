@@ -21,15 +21,17 @@ $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                 $sl = 1;
                 while ($row = $result->fetch_assoc()) {
+                    $id=$row['id'];
+                    $description=$row['description'];
+
             ?>
             <div class="card mb-3">
                 <img class="card-img-top" style="height:400px;width:100%;" src="img/<?php echo $row["image"]; ?>" alt="">
                 <div class="card-body">
                     <h5 class="card-title">
-                        <a href="single.php?id=<?php echo $row['id'];?>"><?php echo $row['title']; ?></a>
+                        <a href="single.php?id=<?php echo $id;?>"><?php echo $row['title']; ?></a>
                     </h5>
-                    <p class="card-text"><?php echo substr($row['description'],120); ?></p>
-                    <p class="card-text"><small class="text-muted"></small></p>
+                    <p class="card-text"><?php echo substr($description,0,120)?><a href="single.php?id=<?php echo $id;?>">Read more...</a></p>
                 </div>
             </div>
         </div>
